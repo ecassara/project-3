@@ -27,6 +27,17 @@ h1 {
   border-bottom: .0575em solid rgba(30,30,150);
 }
 
+figure {
+  font-size: 0.8125em; /*13px/16px = .8125*/
+  display: block;
+  max-width: 25%;
+}
+
+img,audio,video {
+  display: block;
+  max-width: 100%;
+}
+
 p {
   text-indent: 2em;
   color: rgba(30,30,30);
