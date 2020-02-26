@@ -30,7 +30,7 @@ h1 {
 figure {
   font-size: 0.8125em; /*13px/16px = .8125*/
   display: block;
-  max-width: 25%;
+  max-width: 100%;
 }
 
 img,audio,video {
@@ -44,4 +44,10 @@ p {
   font-size: 1.125em; /* 18px / 16px = 1em*/
   line-height: 1.66666em; /*22px /18px = 1.222222*/
   padding-top: 0.77777em;/*14px/18=.77777em*/
+}
+
+.content{
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
 }
