@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Source+Sans+Pro&display=swap');
-
+@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -10,25 +9,27 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles... */
 
 html {
-  font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
+  font-family: "Spartan", Helvetica, Arial, sans-serif;
   max-width: 100%;
   padding: 1em 6em;
 }
 
 body {
-  background-color: rgba(220,220,220);
+  background-color: rgba(40,35,65);
+
 }
 
 h1 {
-  color: rgba(30,30,150);
+  color: rgba(225,225,225);
   font-size: 2.5em; /* 40px / 16px = 2.5em */
   padding-top: .5em;/*20px/40px=.5em*/
-  padding-bottom: .5em;/*20px/40px=.5em*/
-  border-bottom: .0575em solid rgba(30,30,150);
+  padding-bottom: .35em;/*20px/40px=.5em*/
+  border-bottom: .065em solid rgba(175,175,175);
+  text-align: center;
 }
 
 h2{
-  color: black;
+  color: rgba(200,200,200);
   font-size: 1.5em; /* 40px / 16px = 2.5em */
   padding-top: .5em;/*20px/40px=.5em*/
 }
@@ -57,9 +58,9 @@ p {
 .content{
   display: grid;
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: auto;
+  grid-template-rows: 2fr 2fr 2fr;
   grid-template-areas:
-    "chars personalities abilities";
+    "Choobie Nina Pooch Tilly Boys Pooch";
   grid-gap: 2em;
 }
 
@@ -69,4 +70,5 @@ p {
 
 figcaption{
   text-align: left;
+  color: rgba(200,200,200)
 }
