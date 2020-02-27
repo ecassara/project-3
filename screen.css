@@ -12,7 +12,7 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html {
   font-family: "Source Sans Pro", Helvetica, Arial, sans-serif;
   max-width: 100%;
-  padding: 1em 4em;
+  padding: 1em 6em;
 }
 
 body {
@@ -27,8 +27,14 @@ h1 {
   border-bottom: .0575em solid rgba(30,30,150);
 }
 
+h2{
+  color: black;
+  font-size: 1.5em; /* 40px / 16px = 2.5em */
+  padding-top: .5em;/*20px/40px=.5em*/
+}
+
 figure {
-  font-size: 0.8125em; /*13px/16px = .8125*/
+  font-size: 1em; /*16px/16px = 1*/
   display: block;
   max-width: 100%;
 }
@@ -36,6 +42,8 @@ figure {
 img,audio,video {
   display: block;
   max-width: 100%;
+  padding-bottom: 0.5em;
+  padding-top: 0.5em;
 }
 
 p {
@@ -48,6 +56,17 @@ p {
 
 .content{
   display: grid;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 2fr 2fr 2fr;
   grid-template-rows: auto;
+  grid-template-areas:
+    "chars personalities abilities";
+  grid-gap: 2em;
+}
+
+.block{
+  text-align: center;
+}
+
+figcaption{
+  text-align: left;
 }
