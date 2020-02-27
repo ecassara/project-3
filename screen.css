@@ -72,3 +72,22 @@ figcaption{
   text-align: left;
   color: rgba(200,200,200)
 }
+
+@media screen and (max-width:700px){
+.content{
+  grid-template-columns: 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "Choobie"
+    "Nina"
+    "Pooch"
+    "Tilly"
+    "Boys"
+    "Pooch";
+    margin: 2em;
+  grid-row-gap: 2em;
+}
+html{
+  padding: 1em;
+}
+}
