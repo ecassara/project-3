@@ -49,19 +49,25 @@ img,audio,video {
 
 p {
   text-indent: 2em;
-  color: rgba(30,30,30);
+  color: rgba(200,200,200);
   font-size: 1.125em; /* 18px / 16px = 1em*/
   line-height: 1.66666em; /*22px /18px = 1.222222*/
-  padding-top: 0.77777em;/*14px/18=.77777em*/
+  padding-top: 1.55556em;/*28px/18=1.55556em*/
+  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
 }
 
 .content{
   display: grid;
+  padding-top: 2em;
+  border-top: .15em solid rgba(175,175,175);
   grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr;
+  grid-template-rows: 2fr 2fr 2fr 2fr;
   grid-template-areas:
-    "Choobie Nina Pooch Tilly Boys Pooch";
-  grid-gap: 2em;
+    "Nina Choobie Pooch"
+    "Tilly Boys Nugget"
+    "Audia Oreo Peaches"
+    "Three-Blonde-Rats Noodle Pookie";
+  grid-gap: 5em;
 }
 
 .block{
@@ -76,10 +82,10 @@ figcaption{
 @media screen and (max-width:700px){
 .content{
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(6, 1fr);
+  grid-template-rows: repeat(9, 1fr);
   grid-template-areas:
-    "Choobie"
     "Nina"
+    "Choobie"
     "Pooch"
     "Tilly"
     "Boys"
@@ -87,7 +93,7 @@ figcaption{
     "Audia"
     "Oreo"
     "Peaches"
-    "Three Blonde Rats"
+    "Three-Blonde-Rats"
     "Noodle"
     "Pookie";
     margin: 2em;
