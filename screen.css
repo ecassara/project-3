@@ -83,9 +83,15 @@ figcaption{
     "Pooch"
     "Tilly"
     "Boys"
-    "Nugget";
+    "Nugget"
+    "Audia"
+    "Oreo"
+    "Peaches"
+    "Three Blonde Rats"
+    "Noodle"
+    "Pookie";
     margin: 2em;
-  grid-row-gap: 2em;
+  grid-row-gap: 1.5em;
 }
 html{
   padding: 1em;
