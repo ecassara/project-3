@@ -56,18 +56,25 @@ p {
   padding-bottom: 1.55556em;/*28px/18=1.55556em*/
 }
 
+.container{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
 .content{
   display: grid;
   padding-top: 2em;
   border-top: .15em solid rgba(175,175,175);
-  grid-template-columns: 2fr 2fr 2fr;
-  grid-template-rows: 2fr 2fr 2fr 2fr;
+  grid-template-columns: 1fr 1fr 1fr;
+  grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
     "Nina Choobie Pooch"
     "Tilly Boys Nugget"
     "Audia Oreo Peaches"
     "Three-Blonde-Rats Noodle Pookie";
-  grid-gap: 5em;
+  grid-row-gap: auto;
+  grid-column-gap: 5em;
 }
 
 .block{
@@ -79,10 +86,30 @@ figcaption{
   color: rgba(200,200,200)
 }
 
-@media screen and (max-width:700px){
+@media screen and (max-width:800px){
+.content{
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: repeat(6, 1fr);
+  grid-template-areas:
+    "Nina Choobie"
+    "Pooch Tilly"
+    "Boys Nugget"
+    "Audia Oreo"
+    "Peaches Three-Blonde-Rats"
+    "Noodle Pookie";
+    margin: 2em;
+    grid-row-gap: 1.5em;
+}
+html{
+  padding: 2em;
+}
+}
+
+
+@media screen and (max-width:540px){
 .content{
   grid-template-columns: 1fr;
-  grid-template-rows: repeat(9, 1fr);
+  grid-template-rows: repeat(12, 1fr);
   grid-template-areas:
     "Nina"
     "Choobie"
@@ -97,7 +124,7 @@ figcaption{
     "Noodle"
     "Pookie";
     margin: 2em;
-  grid-row-gap: 1.5em;
+    grid-row-gap: 1.5em;
 }
 html{
   padding: 1em;
