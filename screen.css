@@ -15,7 +15,7 @@ html {
 }
 
 body {
-  background-color: rgba(40,35,65);
+  background-color: rgba(35,30,75);
 
 }
 
@@ -48,15 +48,15 @@ img,audio,video {
 }
 
 p {
-  text-indent: 2em;
+  text-indent: 2em; /*36px/18px=2em*/
   color: rgba(200,200,200);
-  font-size: 1.125em; /* 18px / 16px = 1em*/
+  font-size: 1.125em; /* 18px / 16px = 1.125em*/
   line-height: 1.66666em; /*22px /18px = 1.222222*/
   padding-top: 1.55556em;/*28px/18=1.55556em*/
-  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
+
 }
 
-.container{
+container{
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -65,7 +65,7 @@ p {
 .content{
   display: grid;
   padding-top: 2em;
-  border-top: .15em solid rgba(175,175,175);
+  border-top: .1em solid rgba(175,175,175);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: 1fr 1fr 1fr 1fr;
   grid-template-areas:
@@ -73,17 +73,35 @@ p {
     "Tilly Boys Nugget"
     "Audia Oreo Peaches"
     "Three-Blonde-Rats Noodle Pookie";
-  grid-row-gap: auto;
-  grid-column-gap: 5em;
+  grid-row-gap: 3em;
+  grid-column-gap: 3em;
 }
 
 .block{
   text-align: center;
+  background: rgba(25,25,45)
+
 }
 
 figcaption{
   text-align: left;
-  color: rgba(200,200,200)
+  color: rgba(200,200,200);
+  line-height: 1.5em;
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+#Intro{
+  padding-top: 1.55556em;/*28px/18=1.55556em*/
+  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
+}
+
+#Rats{
+}
+
+#Outro{
+  padding-top: 1em;
+  padding bottom: 2em;
 }
 
 @media screen and (max-width:800px){
