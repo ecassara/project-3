@@ -32,13 +32,16 @@ figure{
   font-size: 1em; /*16px/16px = 1*/
   display: block;
   max-width: 100%;
+  margin-top: 1em;
+  margin-bottom: 1em;
 }
 img,audio,video{
   display: block;
   max-width: 90%;
+  align-self: center;
   padding-bottom: 0.5em; /*8px/16px=0.5em*/
-  padding-top: 0.5em; /*8px/16px=0.5em*/
-  padding-left: 1.125em; /*18px/16px=1.125em*/
+  margin-left: auto;
+  margin-right: auto;
 }
 p{
   text-indent: 2em; /*36px/18px=2em*/
@@ -57,7 +60,7 @@ section{
   grid-row-gap: 3em;
   grid-column-gap: 3em;
 }
-.block{
+article{
   text-align: center;
   background: rgba(25,25,45);
   height: min-content;
@@ -65,17 +68,16 @@ section{
 figcaption{
   text-align: left;
   color: rgba(200,200,200);
+  max-width: 90%;
   line-height: 1.5em;
-  padding-left: 1em;
-  padding-right: 1.125em;
+  margin-left: auto;
+  margin-right: auto;
 }
-}
-@media screen and (max-width:1000px){
+@media screen and (max-width:1240px){
 section{
   grid-template-columns: 1fr 1fr;
-  grid-template-rows: auto;
-    margin: 2em;
-    grid-row-gap: 1.5em;
+  margin: 2em;
+  grid-row-gap: 1.5em;
 }
 html{
   padding: 2em;
@@ -88,12 +90,10 @@ p{
   line-height: 1.3333em; /*24px /18px = 1.3333*/
 }
 }
-@media screen and (max-width:540px){
+@media screen and (max-width:690px){
 section{
   grid-template-columns: 1fr;
-  grid-template-rows: auto;
-    margin: 2em;
-    grid-row-gap: 1.5em;
+  margin: 1em;
 }
 html{
   padding: 1em;
@@ -103,7 +103,7 @@ h1{
   padding-top: .25em;/*10px/40px=.25em*/
 }
 h2{
-  font-size: 1em; /* 18px / 18px = 1em */
+  font-size: 1.5em; /* 18px / 18px = 1em */
 }
 p{
   font-size: 1em; /* 16px / 16px = 1em*/
