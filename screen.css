@@ -5,20 +5,17 @@
 */
 
 a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,caption,center,cite,code,dd,del,details,dfn,div,dl,dt,em,embed,fieldset,figcaption,figure,footer,form,h1,h2,h3,h4,h5,h6,header,hgroup,html,i,iframe,img,ins,kbd,label,legend,li,mark,menu,nav,object,ol,output,p,pre,q,ruby,s,samp,section,small,span,strike,strong,sub,summary,sup,table,tbody,td,tfoot,th,thead,time,tr,tt,u,ul,var,video{margin:0;padding:0;border:0;font-size:100%;font:inherit;vertical-align:baseline}article,aside,details,figcaption,figure,footer,header,hgroup,menu,nav,section{display:block}html{line-height:1}body{line-height:inherit;}ol,ul{list-style:none}blockquote,q{quotes:none}blockquote:after,blockquote:before,q:after,q:before{content:'';content:none}table{border-collapse:collapse;border-spacing:0}
-
 /* Begin site styles... */
 
-html {
+html{
   font-family: "Spartan", Helvetica, Arial, sans-serif;
   max-width: 100%;
   padding: 1em 6em;
 }
-
-body {
+body{
   background-color: rgba(35,30,75);
 }
-
-h1 {
+h1{
   color: rgba(225,225,225);
   font-size: 2.5em; /* 40px / 16px = 2.5em */
   padding-top: .5em;/*20px/40px=.5em*/
@@ -26,63 +23,45 @@ h1 {
   border-bottom: .065em solid rgba(175,175,175);
   text-align: center;
 }
-
 h2{
   color: rgba(200,200,200);
   font-size: 1.5em; /* 40px / 16px = 2.5em */
   padding-top: .5em;/*20px/40px=.5em*/
 }
-
-figure {
+figure{
   font-size: 1em; /*16px/16px = 1*/
   display: block;
   max-width: 100%;
 }
-
-img,audio,video {
+img,audio,video{
   display: block;
   max-width: 90%;
   padding-bottom: 0.5em; /*8px/16px=0.5em*/
   padding-top: 0.5em; /*8px/16px=0.5em*/
   padding-left: 1.125em; /*18px/16px=1.125em*/
 }
-
-p {
+p{
   text-indent: 2em; /*36px/18px=2em*/
   color: rgba(200,200,200);
   font-size: 1.125em; /* 18px / 16px = 1.125em*/
   line-height: 1.66666em; /*22px /18px = 1.222222*/
   padding-top: 1.55556em;/*28px/18=1.55556em*/
-
+  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
 }
-
-container{
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
-
-.content{
+section{
   display: grid;
   padding-top: 2em;
   border-top: .1em solid rgba(175,175,175);
   grid-template-columns: 1fr 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-    "Nina Choobie Pooch"
-    "Tilly Boys Nugget"
-    "Audia Oreo Peaches"
-    "Three-Blonde-Rats Noodle Pookie";
   grid-row-gap: 3em;
   grid-column-gap: 3em;
 }
-
 .block{
   text-align: center;
   background: rgba(25,25,45);
   height: min-content;
 }
-
 figcaption{
   text-align: left;
   color: rgba(200,200,200);
@@ -90,81 +69,46 @@ figcaption{
   padding-left: 1em;
   padding-right: 1.125em;
 }
-
-#Intro{
-  padding-top: 1.55556em;/*28px/18=1.55556em*/
-  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
 }
-
-#Rats{
-  flex-wrap: wrap;
-}
-
-#Outro{
-  padding-top: 0em;
-  padding-bottom: 2em;
-}
-
 @media screen and (max-width:1000px){
-.content{
+section{
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-    "Nina Choobie"
-    "Pooch Tilly"
-    "Boys Nugget"
-    "Audia Oreo"
-    "Peaches Three-Blonde-Rats"
-    "Noodle Pookie";
     margin: 2em;
     grid-row-gap: 1.5em;
 }
 html{
   padding: 2em;
 }
-h1 {
+h1{
   font-size: 2em; /* 32px / 16px = 2em */
 }
-p {
+p{
   font-size: 1.125em; /* 18px / 16px = 1.25em*/
   line-height: 1.3333em; /*24px /18px = 1.3333*/
 }
-
-
+}
 @media screen and (max-width:540px){
-.content{
+section{
   grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-template-areas:
-    "Nina"
-    "Choobie"
-    "Pooch"
-    "Tilly"
-    "Boys"
-    "Nugget"
-    "Audia"
-    "Oreo"
-    "Peaches"
-    "Three-Blonde-Rats"
-    "Noodle"
-    "Pookie";
     margin: 2em;
     grid-row-gap: 1.5em;
 }
 html{
   padding: 1em;
 }
-h1 {
+h1{
   font-size: 1.5em; /* 24px / 16px = 1.5em */
   padding-top: .25em;/*10px/40px=.25em*/
 }
 h2{
   font-size: 1em; /* 18px / 18px = 1em */
 }
-p {
+p{
   font-size: 1em; /* 16px / 16px = 1em*/
 }
-figure {
+figure{
   font-size: .85em; /*12px/16px = 1*/
 }
 }
