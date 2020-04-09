@@ -1,4 +1,5 @@
 @import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -10,30 +11,56 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 html{
   font-family: "Spartan", Helvetica, Arial, sans-serif;
   max-width: 100%;
-  padding: 1em 6em;
+  padding: 2em;
 }
 body{
-  background-color: rgba(35,30,75);
+  background-color: rgba(35,30,95,92%);
+}
+header{
+  display: block;
+  padding-top: .25em;/*10px/40px=.25em*/
+  padding-bottom: .35em;/*14px/40px=.35em*/
+  border-bottom: .065em solid rgba(175,175,175,);
 }
 h1{
+  font-family: 'Dancing Script', cursive;
   color: rgba(225,225,225);
-  font-size: 2.5em; /* 40px / 16px = 2.5em */
-  padding-top: .5em;/*20px/40px=.5em*/
-  padding-bottom: .35em;/*20px/40px=.5em*/
-  border-bottom: .065em solid rgba(175,175,175);
+  font-size: 3em; /*24px/16px = 1.5em */
   text-align: center;
+  padding-bottom: .02em;
 }
 h2{
   color: rgba(200,200,200);
-  font-size: 1.5em; /* 40px / 16px = 2.5em */
+  font-size: 1.5em; /*48px/16px=3em*/
+  padding-top: 1em; /*40px/40px=1em*/
+  text-align: center;
+}
+h3{
+  font-family: 'Dancing Script', cursive;
+  color: rgba(200,200,200);
+  font-size: 1.75em; /*24px/16px=1.5em*/
   padding-top: .5em;/*20px/40px=.5em*/
 }
+p{
+  text-indent: 2em; /*36px/18px=2em*/
+  color: rgba(200,200,200);
+  font-size: 1em; /*16px/16px=1em*/
+  line-height: 1.66666em; /*30px/18px=1.222222*/
+  padding-top: 1.55556em;/*28px/18=1.55556em*/
+  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
+}
+pagename{
+  font-size: 1.25em; /*24px/16px = 1.5em */
+  text-align: center;
+  padding-top: .5em;
+  border-top: .065em solid rgba(175,175,175,);
+}
 figure{
-  font-size: 1em; /*16px/16px = 1*/
+  font-size: 1em; /*16px/16px=1*/
   display: block;
   max-width: 100%;
-  margin-top: 1em;
-  margin-bottom: 1em;
+  margin-top: 1em; /*16px/16px=1*/
+  margin-bottom: 1em; /*16px/16px=1*/
 }
 img,audio,video{
   display: block;
@@ -43,72 +70,64 @@ img,audio,video{
   margin-left: auto;
   margin-right: auto;
 }
-p{
-  text-indent: 2em; /*36px/18px=2em*/
-  color: rgba(200,200,200);
-  font-size: 1.125em; /* 18px / 16px = 1.125em*/
-  line-height: 1.66666em; /*22px /18px = 1.222222*/
-  padding-top: 1.55556em;/*28px/18=1.55556em*/
-  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
-}
-section{
+.gridarea{
   display: grid;
   padding-top: 2em;
-  border-top: .1em solid rgba(175,175,175);
-  grid-template-columns: 1fr 1fr 1fr;
+  /*border-top: .1em solid rgba(175,175,175);*/
+  grid-template-columns: 1fr;
   grid-template-rows: auto;
-  grid-row-gap: 3em;
-  grid-column-gap: 3em;
+  grid-row-gap: 3em; /*48px/16px=3em*/
+  grid-column-gap: 3em; /*48px/16px=3em*/
 }
-article{
+.ratbio{
   text-align: center;
-  background: rgba(25,25,45);
+  background: rgba(25,25,55,70%);
   height: min-content;
 }
 figcaption{
   text-align: left;
   color: rgba(200,200,200);
   max-width: 90%;
-  line-height: 1.5em;
+  line-height: 1.5em; /*24px/16px=1.5em*/
   margin-left: auto;
   margin-right: auto;
 }
-@media screen and (max-width:1240px){
-section{
+@media screen and (min-width:61em){
+.gridarea{
   grid-template-columns: 1fr 1fr;
-  margin: 2em;
-  grid-row-gap: 1.5em;
+  grid-row-gap: 1.5em; /*24px/16px=1.5em*/
 }
 html{
-  padding: 2em;
+  padding: 2em 6em;
 }
 h1{
-  font-size: 2em; /* 32px / 16px = 2em */
+  font-size: 2em; /*32px/16px=2em*/
 }
 p{
-  font-size: 1.125em; /* 18px / 16px = 1.25em*/
-  line-height: 1.3333em; /*24px /18px = 1.3333*/
+  font-size: 1.125em; /*18px/16px=1.25em*/
+  line-height: 1.4em; /*24px/16px=1.3333*/
 }
 }
-@media screen and (max-width:690px){
-section{
-  grid-template-columns: 1fr;
-  margin: 1em;
+
+@media screen and (min-width:88em){
+.gridarea{
+  grid-template-columns: 1fr 1fr 1fr;
 }
 html{
-  padding: 1em;
+  padding: 2em 8em;
 }
 h1{
-  font-size: 1.5em; /* 24px / 16px = 1.5em */
-  padding-top: .25em;/*10px/40px=.25em*/
+  font-size: 2.5em; /*40px/16px=2.5em*/
+  padding-top: .5em;/*20px/40px=.5em*/
 }
 h2{
-  font-size: 1.5em; /* 18px / 18px = 1em */
+  font-size: 1.5em; /*16px/16px=1em*/
 }
 p{
-  font-size: 1em; /* 16px / 16px = 1em*/
+  font-size: 1.25em; /*20px/16px=1.25em*/
+  line-height: 1.5em; /*24px/16px=1.5*/
 }
 figure{
-  font-size: .85em; /*12px/16px = 1*/
+  font-size: 1em; /*16px/16px=1*/
 }
 }
