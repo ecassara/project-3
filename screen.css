@@ -1,5 +1,4 @@
-@import url('https://fonts.googleapis.com/css?family=Spartan&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Dancing+Script:wght@500&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dancing+Script&family=Encode+Sans+Condensed:wght@200&family=Raleway&display=swap');
 /* http://meyerweb.com/eric/tools/css/reset/
    v2.0 | 20110126
    License: none (public domain)
@@ -9,9 +8,12 @@ a,abbr,acronym,address,applet,article,aside,audio,b,big,blockquote,body,canvas,c
 /* Begin site styles... */
 
 html{
-  font-family: "Spartan", Helvetica, Arial, sans-serif;
-  max-width: 100%;
+  font-family: 'Raleway', sans-serif;  max-width: 100%;
   padding: 2em;
+}
+a{
+  text-decoration: none;
+  color: rgba(225,225,255);
 }
 body{
   background-color: rgba(35,30,95,92%);
@@ -19,41 +21,43 @@ body{
 header{
   display: block;
   padding-top: .25em;/*10px/40px=.25em*/
-  padding-bottom: .35em;/*14px/40px=.35em*/
-  border-bottom: .065em solid rgba(175,175,175,);
+  padding-bottom: .75em;/*14px/40px=.35em*/
+  border-bottom: .1em solid rgba(225,225,255);
 }
 h1{
   font-family: 'Dancing Script', cursive;
-  color: rgba(225,225,225);
   font-size: 3em; /*24px/16px = 1.5em */
   text-align: center;
   padding-bottom: .02em;
 }
 h2{
-  color: rgba(200,200,200);
-  font-size: 1.5em; /*48px/16px=3em*/
+  font-family: 'Encode Sans Condensed', sans-serif;
+  color: rgba(225,225,255);
+  font-size: 2em; /*48px/16px=3em*/
   padding-top: 1em; /*40px/40px=1em*/
   text-align: center;
 }
 h3{
   font-family: 'Dancing Script', cursive;
-  color: rgba(200,200,200);
+  color: rgba(225,225,255);
   font-size: 1.75em; /*24px/16px=1.5em*/
   padding-top: .5em;/*20px/40px=.5em*/
 }
+li{
+  text-align: center;
+  padding-top: .75em;
+}
 p{
-  text-indent: 2em; /*36px/18px=2em*/
-  color: rgba(200,200,200);
+  color: rgba(225,225,255);
   font-size: 1em; /*16px/16px=1em*/
   line-height: 1.66666em; /*30px/18px=1.222222*/
   padding-top: 1.55556em;/*28px/18=1.55556em*/
   padding-bottom: 1.55556em;/*28px/18=1.55556em*/
 }
-pagename{
+.pagename{
   font-size: 1.25em; /*24px/16px = 1.5em */
   text-align: center;
   padding-top: .5em;
-  border-top: .065em solid rgba(175,175,175,);
 }
 figure{
   font-size: 1em; /*16px/16px=1*/
@@ -73,7 +77,14 @@ img,audio,video{
 .gridarea{
   display: grid;
   padding-top: 2em;
-  /*border-top: .1em solid rgba(175,175,175);*/
+  grid-template-columns: 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 3em; /*48px/16px=3em*/
+  grid-column-gap: 3em; /*48px/16px=3em*/
+}
+.newgridarea{
+  display: grid;
+  padding-top: 2em;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-row-gap: 3em; /*48px/16px=3em*/
@@ -96,6 +107,13 @@ figcaption{
 .gridarea{
   grid-template-columns: 1fr 1fr;
   grid-row-gap: 1.5em; /*24px/16px=1.5em*/
+}
+.newgridarea{
+  min-width: 55%;
+  grid-template-columns: 1fr 1fr;
+  grid-row-gap: 1.5em; /*24px/16px=1.5em*/
+  margin-right: auto;
+  margin-left: auto;
 }
 html{
   padding: 2em 6em;
