@@ -15,6 +15,10 @@ a{
   text-decoration: none;
   color: rgba(225,225,255);
 }
+a:hover{
+  background-color: rgba(225,225,255);
+  color: rgba(35,30,95,92%);
+}
 body{
   background-color: rgba(35,30,95,92%);
 }
@@ -25,6 +29,7 @@ header{
   border-bottom: .1em solid rgba(225,225,255);
 }
 h1{
+  color: rgba(225,225,255);
   font-family: 'Dancing Script',sans-serif; cursive;
   font-size: 3em; /*24px/16px = 1.5em */
   text-align: center;
@@ -119,7 +124,7 @@ html{
   padding: 2em 6em;
 }
 h1{
-  font-size: 2em; /*32px/16px=2em*/
+  font-size: 3.5em; /*32px/16px=2em*/
 }
 p{
   font-size: 1.125em; /*18px/16px=1.25em*/
@@ -135,8 +140,7 @@ html{
   padding: 2em 8em;
 }
 h1{
-  font-size: 2.5em; /*40px/16px=2.5em*/
-  padding-top: .5em;/*20px/40px=.5em*/
+  font-size: 4em; /*40px/16px=2.5em*/
 }
 h2{
   font-size: 1.5em; /*16px/16px=1em*/
