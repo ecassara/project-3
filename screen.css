@@ -11,11 +11,11 @@ html{
   font-family: 'Raleway', Helvetica, Arial, sans-serif;  max-width: 100%;
   padding: 2em;
 }
-a{
+a.menu{
   text-decoration: none;
   color: rgba(225,225,255);
 }
-a:hover{
+a.menu:hover{
   background-color: rgba(225,225,255);
   color: rgba(35,30,95,92%);
 }
@@ -57,7 +57,7 @@ p{
   font-size: 1em; /*16px/16px=1em*/
   line-height: 1.66666em; /*30px/18px=1.222222*/
   padding-top: 1.55556em;/*28px/18=1.55556em*/
-  padding-bottom: 1.55556em;/*28px/18=1.55556em*/
+  padding-bottom: 1.05556em;/*28px/18=1.55556em*/
 }
 .pagename{
   font-size: 1.25em; /*24px/16px = 1.5em */
@@ -95,14 +95,34 @@ img,audio,video{
   grid-row-gap: 3em; /*48px/16px=3em*/
   grid-column-gap: 3em; /*48px/16px=3em*/
 }
+.homegridarea{
+  display: grid;
+  padding-top: 2em;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: auto;
+  grid-row-gap: 3em; /*48px/16px=3em*/
+  grid-column-gap: 3em; /*48px/16px=3em*/
+}
 .ratbio{
   text-align: center;
   background: rgba(25,25,55,70%);
   height: min-content;
 }
+a.button{
+  text-decoration: none;
+  display: inline-block;
+}
+.button{
+  background-color: white;
+  color: rgba(35,30,95,92%);
+  font-size: 2em;
+  font-family: 'Encode Sans Condensed', sans-serif;
+  padding: 8px 16px;
+  border-radius: 16px;
+}
 figcaption{
   text-align: left;
-  color: rgba(200,200,200);
+  color: rgba(220,220,220);
   max-width: 90%;
   line-height: 1.5em; /*24px/16px=1.5em*/
   margin-left: auto;
