@@ -30,7 +30,7 @@ header{
 }
 h1{
   color: rgba(225,225,255);
-  font-family: 'Dancing Script',sans-serif; cursive;
+  font-family: 'Dancing Script',sans-serif;
   font-size: 3em; /*24px/16px = 1.5em */
   text-align: center;
   padding-bottom: .02em;
@@ -43,7 +43,7 @@ h2{
   text-align: center;
 }
 h3{
-  font-family: 'Dancing Script',sans-serif; cursive;
+  font-family: 'Dancing Script',sans-serif;
   color: rgba(225,225,255);
   font-size: 2em; /*24px/16px=1.5em*/
   padding-top: .5em;/*20px/40px=.5em*/
@@ -164,7 +164,7 @@ p{
   padding: 8px 16px;
   border-radius: 16px;
 }
-
+}
 @media screen and (min-width:88em){
 .gridarea{
   grid-template-columns: 1fr 1fr 1fr;
