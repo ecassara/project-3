@@ -87,7 +87,7 @@ img,audio,video{
 }
 .gridarea{
   display: grid;
-  padding-top: 1.25em;
+  padding-top: .25em;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-row-gap: 3em; /*48px/16px=3em*/
@@ -95,7 +95,7 @@ img,audio,video{
 }
 .newgridarea{
   display: grid;
-  padding-top: 1.25em;
+  padding-top: .25em;
   grid-template-columns: 1fr;
   grid-template-rows: auto;
   grid-row-gap: 3em; /*48px/16px=3em*/
@@ -103,7 +103,7 @@ img,audio,video{
 }
 .homegridarea{
   display: grid;
-  padding-top: 1.25em;
+  padding-top: .25em;
   grid-template-columns: 1fr 1fr;
   grid-template-rows: auto;
   grid-row-gap: 1em; /*48px/16px=3em*/
