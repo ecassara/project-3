@@ -25,7 +25,7 @@ body{
 header{
   display: block;
   padding-top: .25em;/*10px/40px=.25em*/
-  padding-bottom: .75em;/*14px/40px=.35em*/
+  padding-bottom: 1.25em;/*14px/40px=.35em*/
   border-bottom: .1em solid rgba(225,225,255);
 }
 h1{
@@ -33,13 +33,13 @@ h1{
   font-family: 'Dancing Script',sans-serif;
   font-size: 3em; /*24px/16px = 1.5em */
   text-align: center;
-  padding-bottom: .02em;
+  padding-bottom: .05em;
 }
 h2{
   font-family: 'Encode Sans Condensed', sans-serif;
   color: rgba(225,225,255);
   font-size: 2em; /*48px/16px=3em*/
-  padding-top: 1em; /*40px/40px=1em*/
+  padding-top: .75em; /*40px/40px=1em*/
   text-align: center;
 }
 h2::before {
